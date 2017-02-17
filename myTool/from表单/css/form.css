@@ -1,0 +1,150 @@
+body,p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "microsoft yahei"
+}
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.mask-box {
+    position: absolute;
+    width: 772px;
+    height: 494px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    opacity: 1;
+    z-index: 1000;
+    resize: both;
+    overflow: auto;
+    padding: 20px;
+    text-align: center;
+}
+.mask-close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    border: 1px solid #b4b2ad;
+    cursor: pointer;
+    font-size: 22px;
+    color: #b4b2ad;
+    font-weight: 100;
+    border-radius: 2px;
+}
+.mask1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    display: none;
+    background-color: #000;
+    -moz-opacity: .6;
+    filter: alpha(opacity=60);
+    background: rgba(0,0,0,0.6);
+}
+.mask-box li label {
+    font-size: 16px;
+    width: 126px;
+    text-align: right;
+    display: inline-block;
+}
+.mask-list {
+    width: 530px;
+    margin: auto;
+    margin-top: 34px;
+    margin-left: 84px;
+}
+.mask-box li {
+     width: 600px; 
+    margin-bottom: 20px;
+}
+.mask-box li input {
+    height: 30px;
+    padding: 0 5px;
+    border: 1px solid #BBB;
+}
+.mask-btn {
+    display: inline-block;
+    background: #d45426;
+    width: 138px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 21px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.form-item {
+    width: 460px;
+    display: inline-block;
+    text-align: left;
+}
+.form-item span	{
+	font-size: 12px;
+	margin-left: 5px;
+}
+.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+}
+.layer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.layer .mask {
+    position: fixed;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 9999;
+}
+.layer .img_box {
+    text-align: center;
+    width: 556px;
+    height: 274px;
+    border-radius: 3px;
+    padding: 40px;
+    position: fixed;
+    background-color: #FFF;
+    z-index: 99999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.layer .img_box .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    line-height: 100%;
+}
+.mask-title{
+    font-size: 24px;
+    color: #666;
+    margin-top: 30px;
+    padding-top: 0px;
+    /* line-height: 39px; */
+    box-sizing: border-box;
+}

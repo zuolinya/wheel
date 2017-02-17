@@ -1,0 +1,207 @@
+.mask{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.mask1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.selectBox{
+	width: 100%;
+	height: 100%;
+	background: url(../images/index/select.png) center top;
+	position: relative;
+}
+.newPc{
+	position: absolute;
+	top: 30px;
+	right: 36px;
+}
+.clearVision{
+	position: absolute;
+    top: 111px;
+    right: 121px;
+}
+.secureAccess{
+	position: absolute;
+    left: 175px;
+    top: 137px;
+}
+.intelligentOperation{
+	position: absolute;
+    top: 334px;
+    right: 50px;
+}
+.naturalInteraction{
+	position: absolute;
+    left: 54px;
+    top: 340px;
+}
+.easy{
+	position: absolute;
+    top: 486px;
+    right: 222px;
+}
+.unifiedApplication{
+	position: absolute;
+    left: 48px;
+    top: 566px;
+}
+.enduranceLife{
+	position: absolute;
+    top: 686px;
+    right: 100px;
+}
+.title{
+	position: absolute;
+	left: 50%;
+	margin-left: -223px;
+	top: 20px;
+}
+.aperture{
+	position: absolute;
+	top: 60%;
+	left: 60%;
+}
+.indexPerson{
+	position: absolute;
+    top: 396px;
+    left: 39px;
+}
+.indexPrompt{
+    position: absolute;
+    top: 682px;
+    left: 248px;
+    width: 358px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+.bg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.wheelBox{
+	margin: 0 auto;
+	width: 468px;
+	animation: a 1000s;
+	position: relative;
+	margin-top: 356px;
+}
+.wheelBox img:nth-child(2){
+	position: absolute;
+    left: 295px;
+    top: -28px;
+    animation: b 1000s;
+}
+.wheelBox img:nth-child(3){
+    position: absolute;
+    left: -18px;
+    top: 149px;
+    animation: b 1000s;
+}
+.wheelBox img:nth-child(4){
+	position: absolute;
+    left: -5px;
+    top: 312px;
+    animation: b 1000s;
+}
+.wheelBox img:nth-child(5){
+    position: absolute;
+    left: 184px;
+    top: 424px;
+    animation: b 1000s;
+}
+.wheelBox img:nth-child(6){
+	position: absolute;
+    left: 426px;
+    top: 161px;
+    animation: b 1000s;
+}
+.wheelBox img:nth-child(7){
+	position: absolute;
+    left: 384px;
+    top: 324px;
+    animation: b 1000s;
+}
+.wheelBox img:nth-child(8){
+	position: absolute;
+    left: 89px;
+    top: -28px;
+    animation: b 1000s;
+}
+.add:before{
+	content: '已点击';
+	position: absolute;
+	top: 50%;
+	right: -20px;
+	font-size: 30px;
+	color: #FFFFFF;
+	background-color: darkgreen;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes a{
+	form{transform: rotate(0deg)}
+	to{transform: rotate(36000deg)}
+}
+@keyframes b{
+	form{transform: rotate(0deg)}
+	to{transform: rotate(-36000deg)}
+}
+.titleAni{
+	animation: scale1 6s linear infinite;
+	-webkit-animation: scale1 6s linear infinite;
+	-o-animation: scale1 6s linear infinite;
+	-moz-animation: scale1 6s linear infinite;
+	-ms-animation: scale1 6s linear infinite;
+}
+@keyframes scale1{
+	0%{transform: scale(0.8);}
+	25%{transform: scale(1);}
+	50%{transform: scale(0.8);}
+	75%{transform: scale(0.6);}
+	100%{transform: scale(0.8);}
+}
+@-webkit-keyframes scale1{
+	0%{-webkit-transform: scale(0.8);}
+	25%{-webkit-transform: scale(1);}
+	50%{-webkit-transform: scale(0.8);}
+	75%{-webkit-transform: scale(0.6);}
+	100%{-webkit-transform: scale(0.8);}
+}
+@-o-keyframes scale1{
+	0%{-o-transform: scale(0.8);}
+	25%{-o-transform: scale(1);}
+	50%{-o-transform: scale(0.8);}
+	75%{-o-transform: scale(0.6);}
+	100%{-o-transform: scale(0.8);}
+}
+@-moz-keyframes scale1{
+	0%{-moz-transform: scale(0.8);}
+	25%{-moz-transform: scale(1);}
+	50%{-moz-transform: scale(0.8);}
+	75%{-moz-transform: scale(0.6);}
+	100%{-moz-transform: scale(0.8);}
+}
+@-ms-keyframes scale1{
+	0%{-ms-transform: scale(0.8);}
+	25%{-ms-transform: scale(1);}
+	50%{-ms-transform: scale(0.8);}
+	75%{-ms-transform: scale(0.6);}
+	100%{-ms-transform: scale(0.8);}
+}

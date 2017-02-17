@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache"><!--是否缓存网页-->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"><!--http协议，缓存控制-->
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"><!--用以声明当前页面用chrome内核来渲染。-->
+    <meta http-equiv="expires" content="0"><!--表示网页不能缓存，如果要缓存的话，可以通过设置content的值，例如60，表示60秒时候缓存过期-->
+    <meta name="apple-touch-fullscreen" content="yes"><!--添加到主屏幕“后，全屏显示-->
+    <meta name="format-detection" content="telephone=no"><!--就禁止了把数字转化为拨号链接！email，adress-->
+    <meta name="apple-mobile-web-app-capable" content="yes"><!--删除默认的苹果工具栏和菜单栏-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!--状态栏的显示样式，默认为白色-->
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta name="sharecontent" data-msg-img="" data-msg-title="" data-msg-content="" data-msg-callback="" data-line-img="" data-line-title="" data-line-callback="">
+    <title>日历控件</title>
+    <link rel="stylesheet" href="css/calendar.css" />
+    <!--<link rel="stylesheet" href="css/sign.css" />-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div id="content">
+        <div class="calendarContent">
+        	<div class="date">
+        		<span id="proveMonth" class="leftTriangle"></span>
+        		<span id="date">2016-10-14</span>
+        		<span id="nextMonth" class="rightTriangle"></span>
+        	</div>
+        	<div>
+        		<table class="calendarBox text-center" id="calendar" class="calendarTable" cellspacing="0" cellpadding="0" >
+					<tbody>
+						<tr height="62" class="tableTitle" style="font-size: 18px;">
+							<td width="70" style="font-size: 18px; vertical-align: middle; padding-top: 0px;">日</td>
+							<td width="70" style="font-size: 18px; vertical-align: middle; padding-top: 0px;">一</td>
+							<td width="70" style="font-size: 18px; vertical-align: middle; padding-top: 0px;">二</td>
+							<td width="70" style="font-size: 18px; vertical-align: middle; padding-top: 0px;">三</td>
+							<td width="70" style="font-size: 18px; vertical-align: middle; padding-top: 0px;">四</td>
+							<td width="70" style="font-size: 18px; vertical-align: middle; padding-top: 0px;">五</td>
+							<td width="70" style="font-size: 18px; vertical-align: middle; padding-top: 0px;">六</td>
+						</tr>
+						<tr height="62" class="weekLine">
+							<td class="check">
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td class="nowdate">
+								<p class="day"></p>
+							</td>
+							<td class="fork">
+								<p class="day"></p>
+							</td>
+						</tr>
+						<tr height="62" class="weekLine">
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+						</tr>
+						<tr height="62" class="weekLine">
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+						</tr>
+						<tr height="62" class="weekLine">
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+						</tr>
+						<tr height="62" class="weekLine">
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td class="check">
+								<p class="day"></p>
+							</td>
+						</tr>
+						<tr height="62" class="weekLine">
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+							<td>
+								<p class="day"></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+        	</div>
+        </div>
+    </div>
+</div>
+<script>
+	var myData = {
+		"Status": 0,
+		"Message": "error",
+		"Data": {
+			"TotalPoint": 900,//云币总数
+		    "ConsecutiveDays": 5,//连续签到的天数
+		    "PrizedPoint": 60,//弹出框的云币数
+		    "IsPrized": true,//是否弹出弹出框，true为显示，
+		    "PrizeDescription": "连续签到一周",
+		    "signDate":[20161011,20161012,20161018,20161019,20161020,20161021]
+		  }
+	}
+</script>
+<script src="js/calendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.gradient{
+	animation: gradient 0.5s  ease-in;
+	-webkit-animation: gradient 0.5s  ease-in;
+	-moz-animation: gradient 0.5s  ease-in;
+	-o-animation: gradient 0.5s  ease-in;
+	-ms-animation: gradient 0.5s  ease-in;
+}
+@-webkit-keyframes gradient{
+	0%{opacity: 0;filter:Alpha(opacity=0);/* 只支持IE6、7、8、9 */}
+	100%{opacity: 1;filter:Alpha(opacity=100);/* 只支持IE6、7、8、9 */}
+}
+@keyframes gradient{
+	0%{opacity: 0;filter:Alpha(opacity=0);/* 只支持IE6、7、8、9 */}
+	100%{opacity: 1;filter:Alpha(opacity=100);/* 只支持IE6、7、8、9 */}
+}
+@-moz-keyframes gradient{
+	0%{opacity: 0;filter:Alpha(opacity=0);/* 只支持IE6、7、8、9 */}
+	100%{opacity: 1;filter:Alpha(opacity=100);/* 只支持IE6、7、8、9 */}
+}
+@-ms-keyframes gradient{
+	0%{opacity: 0;filter:Alpha(opacity=0);/* 只支持IE6、7、8、9 */}
+	100%{opacity: 1;filter:Alpha(opacity=100);/* 只支持IE6、7、8、9 */}
+}
+@-o-keyframes gradient{
+	0%{opacity: 0;filter:Alpha(opacity=0);/* 只支持IE6、7、8、9 */}
+	100%{opacity: 1;filter:Alpha(opacity=100);/* 只支持IE6、7、8、9 */}
+}

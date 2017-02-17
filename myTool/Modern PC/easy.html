@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta name="sharecontent" data-msg-img="" data-msg-title="" data-msg-content="" data-msg-callback="" data-line-img="" data-line-title="" data-line-callback="">
+    <title>老电脑玩不转新时代</title>
+    <meta name="viewport" content="width=640px', user-scalable=no, target-densitydpi=device-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/app.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo3.css" />
+    <link href="css/load.css" type="text/css" rel="stylesheet">
+</head>
+<script src="javascript/load.js"></script>
+<body onload="loading()">
+    <div class="load" id="loading">
+        <div class="loadLogo"></div>
+        <table id="tb">
+            <tr>
+                <td>
+                    <input type="text" size="50" class="percent" id="percent" />
+                </td>
+            </tr>
+            <tr style="display: none;">
+                <td>
+                    <input type="text" size="50" class="progressbar" id="progressbar" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="content">
+        <div class="page page-1-1 page-current">
+            <div class="wrap">
+                <div class="bg">
+                    <img src="images/easy/easy1.png" />
+                </div>
+                <div class="person pt-page-moveFromRightFade pt-page-delay300">
+                    <img src="images/easy/person.png" />
+                </div>
+                <div class="title pt-page-moveFromLeftFade pt-page-delay1000">
+                    <img src="images/easy/speak.png" />
+                </div>
+                <div id="start"></div>
+                <img src="images/arrow.png" style="position: absolute; left: 290px;z-index:100;bottom:0;" class="l-arrow-top-bottom">
+            </div>
+        </div>
+        <div class="page page-2-1 hide">
+            <div class="bg">
+                <img src="img/d3-bg.jpg" />
+            </div>
+            <div class="wrap">
+                <div class="time">
+                    <img src="img/pic_01.png" />
+                </div>
+                <ul class="status4"></ul>
+                <span id="lock" class="lock lock31"></span>
+                <i class="i1"></i>
+                <i class="i2"></i>
+            </div>
+        </div>
+        <div class="page page-3-1 hide">
+            <div class="bg">
+                <img src="img/chat.jpg" />
+            </div>
+            <div class="wrap">
+                <div class="wechat-input">
+                    <div id="wechatInput">
+                        <div></div>
+                    </div>
+                    <img src="img/keyboard.jpg" id="keyboard" />
+                </div>
+            </div>
+        </div>
+        <div class="page page-4-1 hide">
+            <div class="wrap ">
+                <a href="easy1.html"><img src="img/send.jpg" id="send" class="light" style="border-radius:10px;" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="closeMusic active"></div>
+    <audio id="a1" src="mp3/sb.mp3"></audio>
+    <audio id="a2" autoplay="" loop="" src="mp3/Music_3.mp3"></audio>
+    <audio src="mp3/mail.mp3" class="hide" id="mail" />
+    <script src="javascript/zepto.min.js"></script>
+    <script src="javascript/touch.js"></script>
+    <script src="javascript/demo3.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="javascript/public.js"></script>
+    <script>
+        $(".d4").click(function () {
+            var display = $('.2').css('display');
+            if (display == 'block') {
+                $(".2").trigger('click');
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(".deng1").addClass("deng");
+        $(".afenxiang").click(function () {
+            $(".fenxiang").show();
+        });
+        $(".fenxiang").click(function () {
+            $(this).hide();
+        })
+    </script>
+    <script>
+        $.ajax({
+            url: "http://event.anruichina.com/wechat/token",
+            dataType: 'jsonp',
+            data: {
+                url: window.location.href
+            },
+            jsonp: 'jsonpcallback',
+            success: function (data) {
+                try {
+                    var wxConfig = eval(data);
+                    wx.config(wxConfig);
+                } catch (e) {
+                    alert(e.message);
+                }
+            }
+        });
+    </script>
+    <script>
+        function loading() {
+            if (document.readyState == "complete") {
+//              $(".load").hide();
+//              $(".content").show();
+            }
+        }
+    </script>
+    <script src="http://arctrac.chinacloudsites.cn/trac/json?tid=O365Interactive_cnbm_3"></script>
+</body>
+</html>
